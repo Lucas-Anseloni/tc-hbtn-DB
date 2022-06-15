@@ -53,13 +53,13 @@ public class GestaoCursosMain {
         Aluno aluno2 = new Aluno();
         aluno1.setNomeCompleto("Lucas Barros");
         aluno1.setMatricula("A01");
-        aluno1.setDataNascimento(LocalDate.of(1992,8,4));
+        aluno1.setNascimento(LocalDate.of(1992,8,4));
         aluno1.setEmail("lucas@email.com");
         aluno1.setTelefones(new ArrayList<Telefone>(List.of(tel1,tel2)));
         aluno1.setEnderecos(new ArrayList<Endereco>(List.of(end1)));
         aluno1.setNomeCompleto("Carolina Martins");
         aluno1.setMatricula("C01");
-        aluno1.setDataNascimento(LocalDate.of(1993,10,26));
+        aluno1.setNascimento(LocalDate.of(1993,10,26));
         aluno1.setEmail("carolina@email.com");
         aluno1.setTelefones(new ArrayList<Telefone>(List.of(tel3)));
         aluno1.setEnderecos(new ArrayList<Endereco>(List.of(end2)));

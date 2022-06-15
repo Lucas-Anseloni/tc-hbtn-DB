@@ -15,7 +15,7 @@ public class Aluno {
     @Column
     private String matricula;
     @Column
-    private LocalDate dataNascimento;
+    private LocalDate nascimento;
     @Column
     private String email;
     @OneToMany(cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.REMOVE})
@@ -49,12 +49,12 @@ public class Aluno {
         this.matricula = matricula;
     }
 
-    public LocalDate getDataNascimento() {
-        return dataNascimento;
+    public LocalDate getNascimento() {
+        return nascimento;
     }
 
-    public void setDataNascimento(LocalDate dataNascimento) {
-        this.dataNascimento = dataNascimento;
+    public void setNascimento(LocalDate nascimento) {
+        this.nascimento = nascimento;
     }
 
     public String getEmail() {
@@ -84,7 +84,7 @@ public class Aluno {
     @Override
     public String toString() {
         return id + " - " + nomeCompleto
-                + " - " + matricula + " - " + dataNascimento + " - "
+                + " - " + matricula + " - " + nascimento + " - "
                 + email + " - " + telefones + " - " + enderecos;
     }
 }
