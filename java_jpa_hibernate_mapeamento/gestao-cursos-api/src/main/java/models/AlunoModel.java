@@ -77,7 +77,7 @@ public class AlunoModel {
     public Aluno findById(Aluno aluno){
         EntityManager entityManager = null;
         EntityTransaction entityTransaction = null;
-        Aluno alunoFound;
+        Aluno alunoFound = null;
 
         try{
             entityManager = emf.createEntityManager();

@@ -57,12 +57,12 @@ public class GestaoCursosMain {
         aluno1.setEmail("lucas@email.com");
         aluno1.setTelefones(new ArrayList<Telefone>(List.of(tel1,tel2)));
         aluno1.setEnderecos(new ArrayList<Endereco>(List.of(end1)));
-        aluno1.setNomeCompleto("Carolina Martins");
-        aluno1.setMatricula("C01");
-        aluno1.setNascimento(LocalDate.of(1993,10,26));
-        aluno1.setEmail("carolina@email.com");
-        aluno1.setTelefones(new ArrayList<Telefone>(List.of(tel3)));
-        aluno1.setEnderecos(new ArrayList<Endereco>(List.of(end2)));
+        aluno2.setNomeCompleto("Carolina Martins");
+        aluno2.setMatricula("C01");
+        aluno2.setNascimento(LocalDate.of(1993,10,26));
+        aluno2.setEmail("carolina@email.com");
+        aluno2.setTelefones(new ArrayList<Telefone>(List.of(tel3)));
+        aluno2.setEnderecos(new ArrayList<Endereco>(List.of(end2)));
         alunoModel.create(aluno1);
         alunoModel.create(aluno2);
 
@@ -119,7 +119,7 @@ public class GestaoCursosMain {
         MaterialCurso material2 = new MaterialCurso();
         material1.setUrl("www.bring.com");
 
-        // 6) Criando duas cursos
+        // 6) Criando dois cursos
         System.out.println("Criando Cursos");
         Curso curso1 = new Curso();
         curso1.setNome("Analise e Desenvolvimento de Software");
@@ -127,10 +127,10 @@ public class GestaoCursosMain {
         curso1.setProfessor(prof1);
         curso1.setMaterialCurso(material1);
         Curso curso2 = new Curso();
-        curso1.setNome("Sistemas da Informação");
-        curso1.setSigla("SI");
-        curso1.setProfessor(prof2);
-        curso1.setMaterialCurso(material2);
+        curso2.setNome("Sistemas da Informação");
+        curso2.setSigla("SI");
+        curso2.setProfessor(prof2);
+        curso2.setMaterialCurso(material2);
         cursoModel.create(curso1);
         cursoModel.create(curso2);
 
